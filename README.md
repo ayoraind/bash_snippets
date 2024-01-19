@@ -4,7 +4,11 @@
 This repository contains three (and counting) bash snippets for downstream analysis of WGS data.  
 1. The bactinspector_select_reference.sh script is designed to facilitate the usage of the [Bactinspector tool](https://gitlab.com/antunderwood/bactinspector), by selecting the best reference genome for SNP phylogeny analysis. It accepts an input directory containing fastq.gz files using the `-i` argument, fastq.gz pattern using the `-f` argument, and the `-o` argument for specifying the output directory. 
 
-Make sure you have the Bactinspector tool installed. You can find more information and installation instructions [here](https://gitlab.com/antunderwood/bactinspector) or [here](https://pypi.org/project/BactInspectorMax/)
+Make sure you have the Bactinspector tool installed. You can find more information and installation instructions [here](https://gitlab.com/antunderwood/bactinspector) or [here](https://pypi.org/project/BactInspectorMax/). This script also assumes that the bactinspector tool is in your $PATH. To be sure, following installation, check if you see the file path to the bactinspector tool by typing:
+
+```
+which bactinspector
+```
 
 ### Sample command
 An example of a command to run this code snippet is:

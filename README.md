@@ -16,9 +16,15 @@ An example of a command to run this code snippet is:
 
 ### Workflow
 **Input Validation:** Checks if both input and output directories are provided.
+
 **Check Input Directory:** Verifies if the specified input directory exists.
+
 **Check Fastq Pattern:** Ensures that the fastq pattern is specified.
+
 **Create Output Directory:** Checks if the specified output directory exists; if not, creates it.
+
 **Run Bactinspector:** Executes Bactinspector's `closest_match` command using the provided inputs.
+
 **Download Reference Genome:** Retrieves the reference genome identified by Bactinspector from an FTP link.
+
 **Remove Plasmid Contigs:** Removes plasmid contigs from the downloaded reference genome.

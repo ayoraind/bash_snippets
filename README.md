@@ -62,3 +62,17 @@ Options:
 ```
 bash extract_reads_from_kraken_output.sh -l /path/to/sample_list.tsv -k /path/to/kraken_results -o /path/to/output_reads -p /path/to/raw_reads
 ```
+
+3. The extract_and_rename_unicycler_or_dragonflye_or_plassembler_or_hybracter_contigs.sh script was written to extract contigs from hybrid assemblies, specifically from Unicycler, Dragonflye, Hybracter, and Plassembler. It uses positional arguments, and adheres to the DRY (do not repeat yourself) principle.
+
+Make sure you have the extract-contig.pl script downloaded. You can find more information [here](https://github.com/raymondkiu/bioinformatics-tools/blob/master/extract-contig.pl). This script also assumes that the extract-contig.pl script is in your $PATH. To be sure, following installation, check if you see the file path to the extract-contig.pl script by typing:
+
+```
+which extract-contig.pl
+```
+
+### Example:
+
+```
+bash extract_and_rename_unicycler_or_dragonflye_or_plassembler_or_hybracter_contigs.sh /path/to/headerless_text_file_containing_genome_ids_alone_in_the_first_column.tsv/path/to/directory/containing/hybrid/assembly /path/to/output/directory name_of_tool_in_lowercase
+```
